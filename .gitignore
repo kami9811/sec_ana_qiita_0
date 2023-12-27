@@ -129,7 +129,7 @@ dmypy.json
 .pyre/
 
 # Secret analysis data directory
-src/data/
+# src/data/
 
 # jupyter lab log
 py-ana/root_jupyter/lab/

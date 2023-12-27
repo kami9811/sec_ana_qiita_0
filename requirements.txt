@@ -1,0 +1,26 @@
+black
+jupyterlab
+jupyterlab_code_formatter
+jupyterlab-git
+lckr-jupyterlab-variableinspector
+jupyterlab_widgets
+ipywidgets
+import-ipynb
+
+# 基本パッケージ
+numpy
+pandas
+scipy
+scikit-learn
+pycaret
+matplotlib
+japanize_matplotlib
+mlxtend
+seaborn
+plotly
+requests
+beautifulsoup4
+Pillow
+opencv-python
+
+# 追加パッケージ

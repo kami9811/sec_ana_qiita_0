@@ -1,0 +1,23 @@
+version: "3.9"
+services:
+  py-ana:
+    # platform: linux/x86_64
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    entrypoint: >
+      jupyter-lab
+      --allow-root
+      --ip=0.0.0.0
+      --port=8888
+      --no-browser
+      --NotebookApp.token=''
+      --notebook-dir=/src
+    expose:
+      - "8888"
+    ports:
+      - "127.0.0.1:8888:8888"
+    volumes:
+      - ./root_jupyter:/root/.jupyter
+      - ./src:/src
